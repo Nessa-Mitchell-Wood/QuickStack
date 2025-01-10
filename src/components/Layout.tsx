@@ -19,7 +19,7 @@ export const Layout: FC<{ title: string }> = ({
 				<script src="/static/js/htmx.js" defer></script>
 				<link rel="stylesheet" href="/static/css/main.css" />
 			</head>
-			<body>
+			<body className="bg-blue-200">
 				{children}
 				<script src="/static/js/main.js"></script>
 			</body>

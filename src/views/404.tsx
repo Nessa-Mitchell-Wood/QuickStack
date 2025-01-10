@@ -2,16 +2,18 @@ import { FC } from 'hono/jsx';
 
 import { Layout } from '../components/Layout';
 import { Banner } from '../components/Banner';
+import { Card } from '../components/Card';
 
 export const NotFound: FC = () => {
 	return (
 		<Layout title="Quick Stack">
 			<Banner title="404" />
-			<div className="container py-12 ">
-				<h2 className="h1 text-black text-opacity-80">Whoops!</h2>
-				<p className="text-black text-opacity-80">
-					I can't find the thing...
-				</p>
+			<div className="container py-4 md:py-8 lg:py-12">
+				<Card title="Whoops!" subtitle="I can't find the thing...">
+					<a href="/" className="link-button">
+						Home
+					</a>
+				</Card>
 			</div>
 		</Layout>
 	);
